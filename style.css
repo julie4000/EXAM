@@ -1,0 +1,59 @@
+
+
+
+#game-container {
+    display: none; /* Cacher le jeu au départ */
+}
+
+.name {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;         
+    justify-content: center;
+    height: center;  
+    margin-top: 40vh; 
+}
+
+#snake-container {
+    text-align: center;
+    position: relative;
+}
+
+h1, a {
+    z-index: 2; 
+}
+h1 {
+    font-weight: normal; /* Retire le gras */
+}
+
+
+.portfolio {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;         
+    justify-content: center;     
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;  
+    margin-top: 0;  
+    text-align: center;     color: #000; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition fluide pour le changement de couleur */
+}
+
+.portfolio:hover {
+    color: #b9b9b9; /* Couleur au survol */
+}
+
+
+#snake-game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Le jeu doit être derrière le contenu principal */
+}
